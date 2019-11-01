@@ -1,4 +1,4 @@
-//Business Logic
+
 
 
 $(document).ready(function(){
@@ -7,7 +7,6 @@ $(document).ready(function(){
     event.preventDefault();
 
     var inputValue = $("input#userInput").val();
-    console.log(typeof inputValue);
     var returnDisplay = [];
 
     for (var index=0;index < parseInt(inputValue)+1;index++){
@@ -24,9 +23,7 @@ $(document).ready(function(){
 
     }
 
-    console.log(returnDisplay);
-
-
+    document.getElementById('visual').innerHTML = returnDisplay.join(", ")
 
   });
 
