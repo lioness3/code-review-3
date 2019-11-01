@@ -11,7 +11,7 @@
  | Behavior . | Input . | Output . |
  |--------------|-----------|-----------|
  |The program returns a range of numbers from 0 to the users inputted number |  "4"  |  "0,1,2,3,4" |
- |   | | |
+ |Replaces 3 with a phrase| "3" | "I'm sorry, Dave. I'm afraid I can't do that." |
  | | | |
  | | | |
  | | | |
