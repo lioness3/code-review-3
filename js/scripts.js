@@ -7,40 +7,18 @@ $(document).ready(function(){
     event.preventDefault();
 
     var inputValue = $("input#userInput").val();
-    var userAnswer = (inputValue).toString();
+    console.log(typeof inputValue);
     var returnDisplay = [];
 
-// for(index 0;index<userAnswer.length;index++){
-// function generateRange(min,max,step){
-// for (index=min; index<=max index=index+step){
-//   console.log(.push(index));
-for (var index=inputValue; index >=0 ; index-=1){
+    for (index=0;index < parseInt(inputValue);index++){
+      returnDisplay.push(index +1);
 
-  (returnDisplay).push(index + ",");
-if(returnDisplay.includes("3")){
- returnDisplay.replace(/"3"/g, "I'm sorry, Dave. I'm afraid I can't do that.");
- console.log(returnDisplay);
-}
-// else if(userAnswer === "2"){
-// var answer2=userAnswer.replace(/2/g,"Boop!")
-// }else if(userAnswer === "1"){
-// true;
-// }
-else{
-  console.log("ooops!");
-};
-};
+    }
+
+    console.log(returnDisplay);
 
 
-
-
-
-
-// "I'm sorry, Dave. I'm afraid I can't do that."
-
-//User Logic
-
-
-});
 
   });
+
+});
