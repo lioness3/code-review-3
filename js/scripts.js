@@ -10,16 +10,22 @@ $(document).ready(function(){
     var userAnswer = (inputValue).toString();
     var returnDisplay = [];
 
-// for(index 0;index<userValue.length;index++){
+// for(index 0;index<userAnswer.length;index++){
+// function generateRange(min,max,step){
+// for (index=min; index<=max index=index+step){
+//   console.log(.push(index));
+for (var index=inputValue; index >=0 ; index-=1)
+$("#visual").prepend(index + ",");
 
-
-  if(userAnswer === "3"){
-  console.log( "I'm sorry, Dave. I'm afraid I can't do that.");
-//  }else if(inputValue === 2){
-//
-// }else if(inputValue === 3)
-}else{
-};
+//   if(userAnswer === "3"){
+//  true;
+// }else if(userAnswer === "2"){
+// true;
+// }else if(userAnswer === "1"){
+// true;
+// }else{
+//   console.log("ooops!");
+// };
 
 
 
