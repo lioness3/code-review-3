@@ -12,9 +12,9 @@
 $(document).ready(function(){
   $(".form-group").submit(function(event){
     event.preventDefault();
-    var inputValue = $(parseInt("input#userInput")).val();
-
-    $("h1#visual").text(inputValue);
+    var inputValue = $("input#userInput").val();
+    console.log(inputValue);
+    $("#visual").text(inputValue);
 
 
 
