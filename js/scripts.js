@@ -3,6 +3,7 @@
 $(document).ready(function(){
   $(".form-group").submit(function(event){
     $(".visualDisplay").toggle();
+    $("#userInput").toggle();
 
 
 
