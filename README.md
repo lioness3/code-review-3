@@ -17,7 +17,7 @@
 
  ******************
  # _Setup_
- Insert URL into any web browser of your choice. insert any number and watch...
+ Insert URL into any web browser of your choice. Then, insert any number and a fun output will be projected onto the screen in a heading format.
  *******************
  # _Technology Used_
  * HTML
