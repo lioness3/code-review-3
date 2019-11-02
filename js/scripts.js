@@ -1,13 +1,14 @@
 
-
+//User Logic
 
 $(document).ready(function(){
   $(".form-group").submit(function(event){
 
     event.preventDefault();
-
     var inputValue = $("input#userInput").val();
     var returnDisplay = [];
+
+//business Logic
 
     for (var index=0;index < parseInt(inputValue)+1;index++){
       var newString = index.toString();
@@ -17,13 +18,16 @@ $(document).ready(function(){
         returnDisplay.push("Boop!");
       }else if (newString.includes("1")) {
         returnDisplay.push("Beep!");
-      }else {
+      }else if (){
         returnDisplay.push(index);
+      } else{
+        .text("Please enter a number.");
       }
+
 
     }
 
-    document.getElementById('visual').innerHTML = returnDisplay.join(", ")
+    document.getElementById("visual").innerHTML = returnDisplay.join(", ")
 
   });
 

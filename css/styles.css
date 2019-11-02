@@ -1,0 +1,21 @@
+html {
+  min-height: 100%;
+  border:solid blue;
+  border-radius: 25%
+  padding: 40%;
+}
+body{
+  background-image:linear-gradient(blue,green,yellow);
+  background-repeat: no-repeat;
+}
+h1{
+  background-color: navy;
+  color: yellow;
+}
+.visualDisplay {
+  display: none;
+  background-color: navy;
+  color: yellow;
+  border: solid green 30px;
+  border-style: groove;
+}
