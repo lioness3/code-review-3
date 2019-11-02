@@ -6,7 +6,7 @@
  #### _By: Joann Carter_
  ***************
  # _Description_
- ##### This is a web application that takes a number from a user and returns a
+ ##### This is a web application that takes a number from a user and returns a string of numbers and phrases.
  #  _Specification Chart_
  | Behavior  | Input  | Output  |
  |--------------|-----------|-----------|

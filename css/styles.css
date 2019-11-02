@@ -1,8 +1,7 @@
 html {
   min-height: 100%;
-  border:solid blue;
-  border-radius: 25%
-  padding: 40%;
+  border:solid blue 25px;
+  padding: 40px;
 }
 body{
   background-image:linear-gradient(blue,green,yellow);
@@ -12,10 +11,15 @@ h1{
   background-color: navy;
   color: yellow;
 }
+h3{
+  color: green;
+}
 .visualDisplay {
   display: none;
+  margin:20px;
   background-color: navy;
   color: yellow;
   border: solid green 30px;
   border-style: groove;
+  padding: 30px;
 }

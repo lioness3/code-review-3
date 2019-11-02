@@ -4,14 +4,15 @@ $(document).ready(function(){
   $(".form-group").submit(function(event){
     $(".visualDisplay").toggle();
 
+
+
     event.preventDefault();
     var inputValue = $("input#userInput").val();
-    var returnDisplay = [];
-  
+
 
 
 //business Logic
-
+    var returnDisplay = [];
     for (var index=0;index < parseInt(inputValue)+1;index++){
       var newString = index.toString();
       if (newString.includes("3")){
@@ -24,6 +25,8 @@ $(document).ready(function(){
         returnDisplay.push(index);
       }
     }
-    document.getElementById("visual").innerHTML = returnDisplay.join(", ")
+
+    document.getElementById("visual").innerHTML = returnDisplay.join(", ");
+
   });
 });
