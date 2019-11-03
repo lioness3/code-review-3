@@ -5,14 +5,13 @@ $(document).ready(function(){
   $(".form-group").submit(function(event){
     event.preventDefault();
 
+
     $("#visualDisplay").toggle();
-
-
-
 
 
 //business Logic
     var inputValue = $("input#userInput").val();
+    $('input#userInput').val('');
     var returnDisplay = [];
 
     for (var index=0;index <= parseInt(inputValue);index++){
