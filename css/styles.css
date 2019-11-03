@@ -14,10 +14,10 @@ h1{
 h3{
   color: green;
 }
-#userInput{
+/* #userInput{
   display:none;
-}
-.visualDisplay {
+} */
+#visualDisplay {
   display: none;
   margin:20px;
   background-color: navy;
