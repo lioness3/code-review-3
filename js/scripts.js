@@ -11,10 +11,10 @@ $(document).ready(function(){
 
 //business Logic
     var inputValue = $("input#userInput").val();
-    $('input#userInput').val('');
     var returnDisplay = [];
 
     for (var index=0;index <= parseInt(inputValue);index++){
+      var inputReset = $('input#userInput').val('');
       var newString = index.toString();
        if (newString.includes("3")){
         returnDisplay.push("I'm sorry, Dave. I'm afraid I can't do that.");
@@ -26,8 +26,9 @@ $(document).ready(function(){
         returnDisplay.push(index);
       };
     };
-
+//Clears input line
+    inputReset;
+//joins phrases in the new string and returns it to the user display
     document.getElementById("visual").innerHTML = returnDisplay.join(", ");
-    $(inputValue).hide();
   });
 });
