@@ -1,9 +1,8 @@
 // Business Logic
-var generateString = function($int) {
+var finalView = function(int) {
   var returnDisplay = [];
 
-  for (var index=0;index <= $int;index++){
-    var inputReset = $('input#userInput').val('');
+  for (var index=0;index <= int;index++){
     var newString = index.toString();
      if (newString.includes("3")){
       returnDisplay.push("I'm sorry, Dave. I'm afraid I can't do that.");
@@ -23,11 +22,11 @@ $(document).ready(function(){
   $(".form-group").submit(function(event){
     event.preventDefault();
 
-    $("#visualDisplay").show();
-
     var inputValue = parseInt($("input#userInput").val());
-
-    //Get joined phrases in the new string and returns it to the user display.
-    document.getElementById("visual").innerHTML = generateString(inputValue);
+    //Joins phrases in the new string and returns it to the user display.
+    document.getElementById("visual").innerHTML = finalView(inputValue);
+    $('input#userInput').val('');
+    $("#visualDisplay").fadeIn();
+    //Clears input
   });
 });
